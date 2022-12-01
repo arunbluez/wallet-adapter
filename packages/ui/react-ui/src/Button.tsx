@@ -21,9 +21,9 @@ export const Button: FC<ButtonProps> = (props) => {
             tabIndex={props.tabIndex || 0}
             type="button"
         >
-            {props.startIcon && <i className="wallet-adapter-button-start-icon">{props.startIcon}</i>}
+            {props.startIcon && <div className="wallet-adapter-button-start-icon">{props.startIcon}</div>}
             {props.children}
-            {props.endIcon && <i className="wallet-adapter-button-end-icon">{props.endIcon}</i>}
+            {props.endIcon && <div className="wallet-adapter-button-end-icon">{props.endIcon}</div>}
         </button>
     );
 };
